@@ -6,11 +6,14 @@
 			function start(){
 				sjs.open();
 
-				var menu_text = new sjs.Text("MENU",28,"blue");
+				var score_txt = new sjs.Text("Your Score: 0", 21, "orange");
+				score_txt.setText("Your Score: "+localStorage.getItem("score")); 
+
+				var menu_text = new sjs.Text("GAMEOVER",28,"blue");
 				menu_text.centerH();
 
-				var startBtn = new sjs.Button("Start", function(){
-					window.location = "fish.html";
+				var startBtn = new sjs.Button("Restart?", function(){
+					window.location = "index.html";
 				});
 				startBtn.center();
 
