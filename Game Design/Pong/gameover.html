@@ -6,18 +6,14 @@
 		<script>
 		function start(){
 			sjs.open("target",500,400);
-			var menu_text = new sjs.Text("MENU",28,"blue"); 
-			menu_text.centerH();
-
-			var startBtn = new sjs.Button("Start", function(){
+			//----New Code 2.7----
+			var gameover_text = new sjs.Text("Sorry My Friend, You Lose!",28,"blue"); 
+			var restartBtn = new sjs.Button("Restart", function(){
 				window.location = "pong.html";
 			});
 
-			startBtn.center();
-
-			var info_text = new sjs.Text("Created By Jon Galt",20,"black");
-
-			info_text.bottom().centerH();
+			restartBtn.center(); 
+			//----End new Code 2.7----
 
 		} //end start
 		</script>
